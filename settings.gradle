@@ -1,3 +1,4 @@
 rootProject.name = "algrithimwithall"
 
 include 'programmers'
+include 'codility'
