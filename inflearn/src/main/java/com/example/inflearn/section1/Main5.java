@@ -10,7 +10,7 @@ public class Main5 {
         char[] chars = s.toCharArray();
         while (rt < lt) {
 
-            if (isAlpah(chars[rt]) && isAlpah(chars[lt])) {
+            if (isAlphabet(chars[rt]) && isAlphabet(chars[lt])) {
                 char tmp = chars[rt];
                 chars[rt] = chars[lt];
                 chars[lt] = tmp;
@@ -18,18 +18,22 @@ public class Main5 {
                 lt--;
             }
 
-            if (!isAlpah(chars[rt])) {
+            if (isNotAlphabet(chars[rt])) {
                 rt++;
             }
 
-            if (!isAlpah(chars[lt])) {
+            if (isNotAlphabet(chars[lt])) {
                 lt--;
             }
         }
         System.out.println(String.valueOf(chars));
     }
 
-    private static boolean isAlpah(char ch) {
+    private static boolean isNotAlphabet(char ch) {
+        return !isAlphabet(ch);
+    }
+
+    private static boolean isAlphabet(char ch) {
         return isLowerCase(ch) || isUpperCase(ch);
     }
 
