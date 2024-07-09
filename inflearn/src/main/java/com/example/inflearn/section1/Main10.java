@@ -37,5 +37,4 @@ public class Main10 {
             System.out.print(n + " ");
         }
     }
-
 }
