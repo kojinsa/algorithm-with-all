@@ -11,3 +11,5 @@ rootProject.name = "algrithimwithall"
 include 'programmers'
 include 'codility'
 include 'inflearn'
+include 'base'
+include 'leetcode'

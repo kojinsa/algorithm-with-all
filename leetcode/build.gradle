@@ -1,0 +1,18 @@
+plugins {
+  id 'java'
+  id 'org.jetbrains.kotlin.jvm'
+}
+
+jar {
+  enabled = false
+}
+
+dependencies {
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+}
+repositories {
+  mavenCentral()
+}
+kotlin {
+  jvmToolchain(17)
+}
