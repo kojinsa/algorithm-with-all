@@ -5,6 +5,7 @@ import java.util.Map;
 
 /**
  * https://leetcode.com/problems/degree-of-an-array/?utm_source=chatgpt.com
+ * https://medium.com/@brentyly/learning-coding-with-leetcode-leetcode-697-degree-of-an-array-18636f429727
  */
 public class DegreeOfAnArray {
 
